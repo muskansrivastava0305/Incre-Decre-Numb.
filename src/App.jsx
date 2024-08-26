@@ -15,10 +15,12 @@ const App = () => {
       </div>
 
       <div className=' border border-blue-950'>
-        <button className=' bg-slate-400 p-2 w-12 text-2xl'
+        <button className=' bg-slate-300 p-2 w-12 text-2xl border border-e-blue-950 hover:bg-slate-500'
         onClick={ () => dispatch(deCreament())}>−</button>
+
         <input name='quantity' type='text' value={myState} className=' w-16 text-center text-xl'/>
-        <button className=' bg-slate-400 p-2 w-12 text-2xl'
+
+        <button className=' bg-slate-300 p-2 w-12 text-2xl border border-s-blue-950 hover:bg-slate-500'
          onClick={ () => dispatch(inCreament(5)) }>+</button>
       </div>
     </div>
